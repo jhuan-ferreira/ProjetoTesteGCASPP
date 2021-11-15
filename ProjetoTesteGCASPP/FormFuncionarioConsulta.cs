@@ -20,7 +20,18 @@ namespace ProjetoTesteGCASPP
         private void btnConsulta_Click(object sender, EventArgs e)
         {
             dgvFuncionarios.Rows.Clear();
-            
+
+            int numero;
+
+            if (!(int.TryParse(txtId.Text, out numero)))
+            {
+                MessageBox.Show("O valor ID deve conter apenas caracteres numericos !", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                PopulaGrid();
+
+                return;
+            }
+
             var funcionario = funcionarioRepository.Get(int.Parse(txtId.Text));
 
             if (!(funcionario is null))
