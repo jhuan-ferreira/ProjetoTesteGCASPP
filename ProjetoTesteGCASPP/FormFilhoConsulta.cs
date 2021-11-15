@@ -1,12 +1,5 @@
 ﻿using ProjetoTesteGCASPP.Repository;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProjetoTesteGCASPP
@@ -24,7 +17,18 @@ namespace ProjetoTesteGCASPP
         {
             dgvFilhos.Rows.Clear();
 
-            var filho = filhoRepository.Get(int.Parse(txtId.Text));
+            int numero;
+
+            if (!(int.TryParse(txtId.Text, out numero)))
+            {
+                MessageBox.Show("O valor ID deve conter apenas caracteres numericos !", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
+                PopulaGrid();
+
+                return;
+            }
+
+            var filho = filhoRepository.Get(numero);
 
             if (!(filho is null))
             {
