@@ -83,7 +83,7 @@ namespace ProjetoTesteGCASPP
             filho.FilhoId = int.Parse(dgvFilhos.CurrentRow.Cells[0].Value.ToString());
             filho.Nome = txtNome.Text;
             filho.DataNascimento = DateTime.Parse(mskTxtDataNascimento.Text);
-            filho.FuncionarioId = funcionarioRepository.FindAll().Where(p => p.Nome == dgvFilhos.CurrentRow.Cells[3].Value.ToString()).Select(p => p.IdFuncionario).FirstOrDefault();
+            filho.FuncionarioId = funcionarioRepository.GetIdByName(cboxPai.SelectedValue.ToString());
 
             filhoRepository.Update(filho);
             PopulaGrid();
