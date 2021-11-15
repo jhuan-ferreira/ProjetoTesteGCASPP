@@ -19,6 +19,7 @@ namespace ProjetoTesteGCASPP
 
         private void cadastroToolStripMenuItem_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
             Form formCadadastro = new FormFuncionarioCadastro();
             formCadadastro.Show();
         }
@@ -44,6 +45,28 @@ namespace ProjetoTesteGCASPP
         {
             Form formFilhoConsulta = new FormFilhoConsulta();
             formFilhoConsulta.Show();
+=======
+            Form formCadadastro = new FormCadastro();
+            formCadadastro.Show();
+        }
+
+        private void excluirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formExcluiFuncionario = new FormExcluiFuncionario();
+            formExcluiFuncionario.Show();
+        }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formConsultaFuncionario = new FormConsultaFuncionario();
+            formConsultaFuncionario.Show();
+        }
+
+        private void atualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form formAtualizaFuncionario = new AtualizaFuncionario();
+            formAtualizaFuncionario.Show();
+>>>>>>> 94308d1dd202ea1a5df42e6530c8cba6729481c7
         }
     }
 }

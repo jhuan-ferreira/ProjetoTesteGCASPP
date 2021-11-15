@@ -56,6 +56,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Include="Context\ContextGCASSP.cs" />
     <Compile Include="Entities\Filho.cs" />
     <Compile Include="Entities\Funcionario.cs" />
@@ -82,6 +83,33 @@
     </Compile>
     <Compile Include="FormFilhoCadastro.Designer.cs">
       <DependentUpon>FormFilhoCadastro.cs</DependentUpon>
+=======
+    <Compile Include="AtualizaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AtualizaFuncionario.Designer.cs">
+      <DependentUpon>AtualizaFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Context\ContextGCASSP.cs" />
+    <Compile Include="Entities\Funcionario.cs" />
+    <Compile Include="FormCadastro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCadastro.Designer.cs">
+      <DependentUpon>FormCadastro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConsultaFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormConsultaFuncionario.Designer.cs">
+      <DependentUpon>FormConsultaFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormExcluiFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormExcluiFuncionario.Designer.cs">
+      <DependentUpon>FormExcluiFuncionario.cs</DependentUpon>
+>>>>>>> 94308d1dd202ea1a5df42e6530c8cba6729481c7
     </Compile>
     <Compile Include="FormPrincipal.cs">
       <SubType>Form</SubType>
@@ -89,13 +117,17 @@
     <Compile Include="FormPrincipal.Designer.cs">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Interface\IFilhoRepository.cs" />
+=======
+>>>>>>> 94308d1dd202ea1a5df42e6530c8cba6729481c7
     <Compile Include="Interface\IRepositoryBase.cs" />
     <Compile Include="Interface\IFuncionarioRepository.cs" />
     <Compile Include="Migrations\202111131920543_Initial.cs" />
     <Compile Include="Migrations\202111131920543_Initial.designer.cs">
       <DependentUpon>202111131920543_Initial.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Migrations\202111142146428_CreateTableFilho.cs" />
     <Compile Include="Migrations\202111142146428_CreateTableFilho.designer.cs">
       <DependentUpon>202111142146428_CreateTableFilho.cs</DependentUpon>
@@ -117,6 +149,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormFilhoCadastro.resx">
       <DependentUpon>FormFilhoCadastro.cs</DependentUpon>
+=======
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\FuncionarioRepository.cs" />
+    <Compile Include="Repository\RepositoryBase.cs" />
+    <EmbeddedResource Include="AtualizaFuncionario.resx">
+      <DependentUpon>AtualizaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCadastro.resx">
+      <DependentUpon>FormCadastro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConsultaFuncionario.resx">
+      <DependentUpon>FormConsultaFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormExcluiFuncionario.resx">
+      <DependentUpon>FormExcluiFuncionario.cs</DependentUpon>
+>>>>>>> 94308d1dd202ea1a5df42e6530c8cba6729481c7
     </EmbeddedResource>
     <EmbeddedResource Include="FormPrincipal.resx">
       <DependentUpon>FormPrincipal.cs</DependentUpon>
@@ -124,9 +174,12 @@
     <EmbeddedResource Include="Migrations\202111131920543_Initial.resx">
       <DependentUpon>202111131920543_Initial.cs</DependentUpon>
     </EmbeddedResource>
+<<<<<<< HEAD
     <EmbeddedResource Include="Migrations\202111142146428_CreateTableFilho.resx">
       <DependentUpon>202111142146428_CreateTableFilho.cs</DependentUpon>
     </EmbeddedResource>
+=======
+>>>>>>> 94308d1dd202ea1a5df42e6530c8cba6729481c7
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

@@ -11,7 +11,10 @@ namespace ProjetoTesteGCASPP.Context
         //}
 
         public DbSet<Funcionario> funcionario { get; set; }
+<<<<<<< HEAD
         public DbSet<Filho> filho { get; set; }
+=======
+>>>>>>> 94308d1dd202ea1a5df42e6530c8cba6729481c7
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
