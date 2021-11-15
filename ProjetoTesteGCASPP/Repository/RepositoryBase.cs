@@ -20,15 +20,9 @@ namespace ProjetoTesteGCASPP.Repository
 
             using(var context = new ContextGCASSP())
             {
-<<<<<<< HEAD
                 context.Entry(obj).State = EntityState.Deleted;
 
                 return context.SaveChanges() > 0;
-=======
-                _context.Entry(obj).State = EntityState.Deleted;
-
-                return _context.SaveChanges() > 0;
->>>>>>> 94308d1dd202ea1a5df42e6530c8cba6729481c7
             }
             
         }
@@ -52,19 +46,12 @@ namespace ProjetoTesteGCASPP.Repository
 
         public bool Update(T data)
         {
-<<<<<<< HEAD
-             using (var context = new ContextGCASSP())
-             {
+            using (var context = new ContextGCASSP())
+            {
                 context.Set<T>().Attach(data);
                 context.Entry(data).State = EntityState.Modified;
 
                 return context.SaveChanges() > 0;
-=======
-            using (var context = new ContextGCASSP())
-            {
-                _context.Entry(data).State = EntityState.Modified;
-                return _context.SaveChanges() > 0;
->>>>>>> 94308d1dd202ea1a5df42e6530c8cba6729481c7
 
             }
         }
@@ -73,12 +60,7 @@ namespace ProjetoTesteGCASPP.Repository
         {
             using (var context = new ContextGCASSP())
             {
-<<<<<<< HEAD
                 return context.Set<T>().ToList();
-=======
-                _context.Set<T>().ToList();
-                return _context.Set<T>().ToList();
->>>>>>> 94308d1dd202ea1a5df42e6530c8cba6729481c7
             }
         }
 
